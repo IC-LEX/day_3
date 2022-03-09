@@ -13,7 +13,7 @@ private func swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
 };
 
 public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
-  return swap(test_array, i, j);
+  return swap(array, i, j);
 };
 
 //Challenge 2 - init_count

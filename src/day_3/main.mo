@@ -76,8 +76,18 @@ public func populate_array(array:[?Nat]) : async [Nat]{
  return(Array.map<?Nat, Nat>(array , f) );
 };
 //Challenge 7 - sum_of_array
+//public func sum_of_array(array [Nat]) : async Nat{
+//  return(Array.map<?Nat, Nat>(array , f) );
+}
 
 //Challenge 8 - squared_array
+
+let g = func (n : Nat) : Nat {
+  return n*n;
+};
+
+public func squared_array(array [Nat]) : async [Nat]{
+  return(Array.map<?Nat, Nat>(array , g));
 
 //Challenge 9 - increase_by_index
 

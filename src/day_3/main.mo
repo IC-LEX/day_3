@@ -56,13 +56,13 @@ public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{
 //Challenge 5 - day_of_the_week
 public func day_of_the_week(n : Nat ) :async ?Text{
   switch(n){
-    case(1){return(opt "Monday");};
-    case(2){return (opt "Tuesday");};
-    case(3){return (opt "Wednesday");};
-    case(4){return (opt "Thursday");};
-    case(5){return (opt "Friday");};
-    case(6){return (opt "Saturday");};
-    case(7){return (opt "Sunday");};
+    case(1){return(?"Monday");};
+    case(2){return (?"Tuesday");};
+    case(3){return (?"Wednesday");};
+    case(4){return (?"Thursday");};
+    case(5){return (?"Friday");};
+    case(6){return (?"Saturday");};
+    case(7){return (?"Sunday");};
 // 
   }; 
   return(null);

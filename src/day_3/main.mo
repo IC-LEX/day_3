@@ -28,7 +28,7 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
  public func seven(array :[Nat]): async Text {
    // let array_1 : [Nat] = Array.mapResult<Nat, Nat, Text>(array, );
    for(vals in array.vals()){
-     let text_render Text = Nat.toText(vals);
+     let text_render = Nat.toText(vals);
       if(Text.contains(text_render, #char '8')){
         return "seven!";
       };

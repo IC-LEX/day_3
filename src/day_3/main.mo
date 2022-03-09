@@ -13,7 +13,7 @@ private func swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
 };
 
 public func test_swap(array : [Nat]) : async [Nat] {
-  var test_array : [Nat] = [1,2,3,4,5,6,7,8,9];
+  let test_array : [var Nat] = [1,2,3,4,5,6,7,8,9];
   return swap(Array.freeze<Nat>test_array, 2, 3);
 };
 

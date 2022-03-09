@@ -20,10 +20,7 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 
 //Challenge 2 - init_count
  public func init_count(n : Nat) : async [Nat]{
-    let array_1 : [Nat] = Array.tabulate<Nat>(n, func(i: Nat) : Nat {
-      for(j :Nat in Iter.range(0,n)){
-        {j}}
-      });
+    let array_1 : [Nat] = Array.tabulate<Nat>(n, func(i: Nat) : Nat { i });
     };
 
 //Challenge 3 - seven

@@ -53,7 +53,7 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 //  };
 
 //Challenge 5 - day_of_the_week
-public func day_of_the_week(n : Nat ) :async Text{
+public func day_of_the_week(n : Nat ) :async ?Text{
   switch(n){
     case(1){return "Monday";};
     case(2){return "Tuesday";};

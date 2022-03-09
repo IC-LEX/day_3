@@ -73,7 +73,7 @@ let f = func (n : ?Nat) : Nat {
 }; 
 
 public func populate_array(array:[?Nat]) : async [Nat]{
- return(Array.map<?Nat Nat>(array , f) );
+ return(Array.map<?Nat, Nat>(array , f) );
 };
 //Challenge 7 - sum_of_array
 

@@ -39,7 +39,7 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 
 //    Debug.print(array_1);
 //    return "Working";
-    };
+
 
 //Challenge 4 - nat_opt_to_nat - Need switch
 // public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{

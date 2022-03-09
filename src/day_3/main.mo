@@ -9,7 +9,7 @@ private func swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   var temp : Nat = mutable_array[j];
   mutable_array[j] := mutable_array[i];
   mutable_array[i] := temp;
-  return Array.freeze<Nat>mutable_array;
+  return Array.freeze<Nat>(mutable_array);
 };
 
 public func test_swap(array : [Nat]) : async [Nat] {

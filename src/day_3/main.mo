@@ -14,7 +14,7 @@ private func swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
 
 public func test_swap(array : [Nat]) : async [Nat] {
   let test_array : [Nat] = [1,2,3,4,5,6,7,8,9];
-  return swap(Array.freeze<Nat>test_array, 2, 3);
+  return swap(Array.freeze<var Nat>test_array, 2, 3);
 };
 
 //Challenge 2 - init_count

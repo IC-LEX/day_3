@@ -84,10 +84,13 @@ public func populate_array(array:[?Nat]) : async [Nat]{
 
 let g = func (n : Nat) : Nat {return(n*n);};
 public func squared_array(array : [Nat]) : async [Nat]{
-  return(Array.map<Nat, Nat>(array , g));
+  return(Array.chain<Nat, Nat>(array , g));
 };
 //Challenge 9 - increase_by_index
-
+let h = func (n : Nat) : Nat {return(n + );};
+public func increase_by_index(array : [Nat]) : async [Nat]{
+  return(Array.map<Nat, Nat>(array , h));
+};
 
 //Challenge 10 - Higher order function contains - Need to use , not Actor
 // importing module into actor to test

@@ -44,13 +44,13 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
     // case where n is null
     case(null){
       return m;
-     }
+     };
 // case where n is supplied as Nat
     case(null){
       return n;
-     }
-   } 
- }
+     };
+   }; 
+ };
 
 //Challenge 5 - day_of_the_week
 

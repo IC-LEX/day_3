@@ -76,4 +76,4 @@ public func day_of_the_week(n : Nat ) :async ?Text{
 //Challenge 10 - Higher order function contains - Need to use , not Actor
 // importing module into actor to test
 
-};
+

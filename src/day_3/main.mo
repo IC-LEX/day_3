@@ -23,9 +23,13 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
     let array_1 : [Nat] = Array.tabulate<Nat>(n, func(i: Nat) : Nat { i });
     };
 
-//Challenge 3 - seven
-// public func seven(array :[Nat]): async Text{
-// };
+Challenge 3 - seven
+ public func seven(array :[Nat]): async Text{
+    let array_1 : [Nat] = Array.foldLeft(array);
+    Debug.print(array_1);
+    return "Working";
+    };
+ };
 
 //Challenge 4 - nat_opt_to_nat - Need switch
 // public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{

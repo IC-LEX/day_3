@@ -1,5 +1,6 @@
 //Imports
 import Array "mo:base/Array";
+import Result "mo:base/Result";
 import Nat "mo:base/Nat";
 import Buffer "mo:base/Buffer";
 import Iter "mo:base/Iter";
@@ -25,9 +26,18 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 
 //Challenge 3 - seven
  public func seven(array :[Nat]): async Text {
-    let array_1 : [Nat] = Array.foldLeft<Nat>(array);
-    Debug.print(array_1);
-    return "Working";
+   // let array_1 : [Nat] = Array.mapResult<Nat, Nat, Text>(array, );
+   for(vals array.vals()){
+     let text_render Text = Nat.toText(vals);
+      if(Text.contains(text_render, #char '8')){
+        return "seven!";
+      };
+      return "No seven! (or do I really mean 8 - who knows.";
+   };
+
+
+//    Debug.print(array_1);
+//    return "Working";
     };
 
 //Challenge 4 - nat_opt_to_nat - Need switch

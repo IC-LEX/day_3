@@ -4,6 +4,7 @@ import Result "mo:base/Result";
 import Nat "mo:base/Nat";
 import Buffer "mo:base/Buffer";
 import Iter "mo:base/Iter";
+import Text "mo:base/Text";
 
 actor {
 //Challenge 1 - swap

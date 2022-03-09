@@ -5,6 +5,7 @@ import Nat "mo:base/Nat";
 import Buffer "mo:base/Buffer";
 import Iter "mo:base/Iter";
 import Text "mo:base/Text";
+import Option "mo:base/Option";
 
 actor {
 //Challenge 1 - swap

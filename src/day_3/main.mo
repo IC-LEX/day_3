@@ -30,9 +30,9 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
    for(val in array.vals()){
      let text_render = Nat.toText(val);
       if(Text.contains(text_render, #char '8')){
-        return "seven!";
+        return("seven!");
       };
-      return "No seven! (or do I really mean 8 - who knows.";
+      return("No seven! (or do I really mean 8 - who knows.");
    };
  };
 

@@ -64,7 +64,7 @@ public func day_of_the_week(n : Nat ) :async Text{
     case(7){return "Sunday";};     
 // case where n is supplied as Nat
   }; 
-  return(null)
+  return(null);
 };
 
 //Challenge 6 - populate_array

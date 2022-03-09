@@ -25,7 +25,7 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 
 //Challenge 3 - seven
  public func seven(array :[Nat]): async Text {
-    let array_1 : [Nat] = Array.foldLeft(array);
+    let array_1 : [Nat] = Array.foldLeft<Nat>(array);
     Debug.print(array_1);
     return "Working";
     };

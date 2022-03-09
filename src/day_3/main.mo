@@ -26,24 +26,31 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
     };
 
 //Challenge 3 - seven
- public func seven(array :[Nat]) : async Text{ 
-   for(i in array.keys()){
-      let text_render = Nat.toText(array[i]);
-      if(Text.contains(text_render, #char '8')){
-        return("seven!");
-      };
-      return("No seven! (or do I really mean 8 - who knows.");
-   };
- };
-
-//    Debug.print(array_1);
-//    return "Working";
+//  public func seven(array :[Nat]) : async Text{ 
+//    for(i in array.keys()){
+//       let text_render = Nat.toText(array[i]);
+//       if(Text.contains(text_render, #char '8')){
+//         return("seven!");
+//       };
+//       return("No seven! (or do I mean 8 - who can say.");
+//    };
+//  };
 
 
 //Challenge 4 - nat_opt_to_nat - Need switch
-// public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{
+ public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{
 //if n is null, return m - (the default value in case of null
-// };
+  switch(n){
+    // case where n is null
+    case(null){
+      return m;
+     }
+// case where n is supplied as Nat
+    case(null){
+      return n;
+     }
+   } 
+ }
 
 //Challenge 5 - day_of_the_week
 

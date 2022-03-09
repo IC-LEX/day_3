@@ -26,10 +26,9 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
     };
 
 //Challenge 3 - seven
- public func seven(array :[Nat]): async Text {
-   for(val in array.vals()){
-     var text_render : Text = Nat.toText(val);
-      if(Text.contains(text_render, #char '8')){
+ public func seven(array :[Nat]): async Text{
+   for(Nat.toText(val) in array.vals()){
+     if(Text.contains(val, #char '8')){
         return("seven!");
       };
       return("No seven! (or do I really mean 8 - who knows.");

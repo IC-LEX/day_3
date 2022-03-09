@@ -1,6 +1,7 @@
 //Imports
 import Array "mo:base/Array";
 import Nat "mo:base/Nat";
+import Buffer "mo:base/Buffer";
 
 actor {
 //Challenge 1 - swap
@@ -16,10 +17,19 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
   return swap(array, i, j);
 };
 
-//Challenge 2 - init_count
-// public func init_count(n : Nat) : async Array [Nat];{}
-//   var array : Array = ;
-//   return();
+//Challenge 2 - init_count = try a buffer
+// From DFinity Buffer.mo
+
+
+
+
+
+// public func init_count(n : Nat) : async [Nat];{
+//   let xs = Buffer.Buffer<Nat>(n);
+//   for(i in Iter.range(0, n)){
+//     xs.add(i);
+//   }; 
+//   return xs
 // };
 
 //Challenge 3 - seven

@@ -66,8 +66,10 @@ public func day_of_the_week(n : Nat ) :async ?Text{
 //Challenge 6 - populate_array - replaces nulls with zeros
 
 let f = func (n : ?Nat) : Nat {
-  if(n != null ) {return(n);};
-  return(0);
+  switch n {
+   case(null) {return 0;};
+   case(?y) {return y};
+  };
 }; 
 
 public func populate_array(array:[?Nat]) : async [Nat]{

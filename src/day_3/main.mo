@@ -82,10 +82,7 @@ public func populate_array(array:[?Nat]) : async [Nat]{
 
 //Challenge 8 - squared_array
 
-let f = func (n : Nat) : Nat {
-  return n*n;
-};
-
+let f = func (n : Nat) : Nat {return(n*n);};
 public func squared_array(array [Nat]) : async [Nat]{
   return(Array.map<?Nat, Nat>(array , f));
 };

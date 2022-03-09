@@ -2,6 +2,7 @@
 import Array "mo:base/Array";
 import Nat "mo:base/Nat";
 import Buffer "mo:base/Buffer";
+import Iter "mo:base/Iter";
 
 actor {
 //Challenge 1 - swap

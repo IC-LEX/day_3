@@ -65,13 +65,13 @@ public func day_of_the_week(n : Nat ) :async ?Text{
 
 //Challenge 6 - populate_array - replaces nulls with zeros
 
-let f = func (n : Nat) : Nat {
-  if(n is Null ) {return(?0);};
-  return(n);
+let f = func (n : ?Nat) : Nat {
+  if(n not Null ) {return(n);};
+  return(0);
 }; 
 
 public func populate_array(array:[?Nat]) : async [Nat]{
-  return(Array.map<?Nat>(array,f));
+  return(Array.map<?Nat>(array , f) );
 };
 //Challenge 7 - sum_of_array
 

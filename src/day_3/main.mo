@@ -17,20 +17,14 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
   return swap(array, i, j);
 };
 
-//Challenge 2 - init_count = try a buffer
-// From DFinity Buffer.mo
-
-
-
-
-
-// public func init_count(n : Nat) : async [Nat];{
-//   let xs = Buffer.Buffer<Nat>(n);
-//   for(i in Iter.range(0, n)){
-//     xs.add(i);
-//   }; 
-//   return xs
-// };
+//Challenge 2 - init_count
+ public func init_count(n : Nat) : async [Nat];{
+    let array_1 : [Nat] = Array.tabluate<Nat>(n, func(i: Nat) : Nat {
+      for(j in Iter.range(0,n)){
+        {j}
+      });
+    }  
+  };
 
 //Challenge 3 - seven
 // public func seven(array :[Nat]): async Text{

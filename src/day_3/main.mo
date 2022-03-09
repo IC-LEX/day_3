@@ -12,7 +12,7 @@ private func swap(array : [Nat], i, j) : Array {
   return mutable_array;
 };
 
-Public func test_swap(array : [Nat]){
+public func test_swap(array : [Nat]){
   let test_array = [1,2,3,4,5,6,7,8,9];
   return swap(text_array, 2, 3);
 };

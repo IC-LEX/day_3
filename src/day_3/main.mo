@@ -58,7 +58,8 @@ public func day_of_the_week(n : Nat ) :async ?Text{
   let days : [Text] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     if(n > 0 and n 8){
       return ?days[n-1];
-      } else
+      } 
+    else {
       return(null);
   }; 
 

@@ -46,8 +46,8 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
       return m;
      };
 // case where n is supplied as Nat
-    case(null){
-      return n;
+    case(?something){
+      return something;
      };
    }; 
  };

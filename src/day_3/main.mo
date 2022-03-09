@@ -5,8 +5,8 @@ import Nat "mo:base/Nat";
 actor {
 //Challenge 1 - swap
 private func swap(array : [var Nat], i : Nat, j : Nat) : [Nat]{
-  let array_mutable = Array.thaw<Nat>(array);
-  var temp = mutable_array[j];
+  let array_mutable : [Nat] = Array.thaw<Nat>(array);
+  var temp : [Nat] = mutable_array[j];
   mutable_array[j] := mutable_array[i];
   mutable_array[i] := temp;
   return mutable_array;

@@ -6,7 +6,7 @@ actor {
 //Challenge 1 - swap
 private func swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   var mutable_array : [Nat] = Array.thaw<Nat>(array);
-  var temp : [Nat] = mutable_array[j];
+  var temp : Nat = mutable_array[j];
   mutable_array[j] := mutable_array[i];
   mutable_array[i] := temp;
   return mutable_array;

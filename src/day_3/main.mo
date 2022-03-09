@@ -63,9 +63,8 @@ public func day_of_the_week(n : Nat ) :async ?Text{
     case(5){return (?"Friday");};
     case(6){return (?"Saturday");};
     case(7){return (?"Sunday");};
-// 
+    case(?something){return null;};
   }; 
-  return null;
 };
 
 //Challenge 6 - populate_array

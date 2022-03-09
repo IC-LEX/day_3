@@ -63,7 +63,7 @@ public func day_of_the_week(n : Nat ) :async ?Text{
     case(5){return (?"Friday");};
     case(6){return (?"Saturday");};
     case(7){return (?"Sunday");};
-    case(?something){return null;};
+    case(n not in [1,2,3,4,5,6,7]){return null;};
   }; 
 };
 

@@ -61,7 +61,8 @@ public func day_of_the_week(n : Nat ) :async ?Text{
       } 
     else {
       return(null);
-  }; 
+      }; 
+};
 
 //Challenge 6 - populate_array
 

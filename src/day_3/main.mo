@@ -39,7 +39,7 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 
 //Challenge 4 - nat_opt_to_nat - Need switch
 public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{
-if n is null, return m - (the default value in case of null
+//if n is null, return m - (the default value in case of null
   switch(n){
     // case where n is null
     case(null){

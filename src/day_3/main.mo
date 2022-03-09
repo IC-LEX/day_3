@@ -9,10 +9,10 @@ private func swap(array : [var Nat], i : Nat, j : Nat) : [Nat]{
   var temp : Nat = mutable_array[j];
   mutable_array[j] := mutable_array[i];
   mutable_array[i] := temp;
-  return mutable_array;
+  return Array.freeze<Nat>mutable_array;
 };
 
-public func test_swap(array : [Nat]) : async [Nat] {
+public func test_swap(array : [Nat]) : async [var Nat] {
   let test_array = [1,2,3,4,5,6,7,8,9];
   return swap(Array.freeze<Nat>test_array, 2, 3);
 };

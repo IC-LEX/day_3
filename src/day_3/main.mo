@@ -56,11 +56,10 @@ public func nat_opt_to_nat(n : ?Nat, m : Nat) : async Nat{
 //Challenge 5 - day_of_the_week
 public func day_of_the_week(n : Nat ) :async ?Text{
   let days : [Text] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-  switch(n){
-    case(n > 0 and n < 8){return(?days[n-1]);};
-    case(something){return(null);};
+    if (n>0 and n<8) {return(?days[n-1]);};
+    return(null);
     }; 
-  }
+  
     
 
 //Challenge 6 - populate_array

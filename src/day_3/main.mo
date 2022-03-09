@@ -62,8 +62,8 @@ public func day_of_the_week(n : Nat ) :async ?Text{
     case(4){return (opt "Thursday");};
     case(5){return (opt "Friday");};
     case(6){return (opt "Saturday");};
-    case(7){return (opt "Sunday");};     
-// case where n is supplied as Nat
+    case(7){return (opt "Sunday");};
+// 
   }; 
   return(null);
 };

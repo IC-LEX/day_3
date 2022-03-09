@@ -28,14 +28,14 @@ public func test_swap(array : [Nat], i : Nat, j : Nat) : async [Nat] {
 //Challenge 3 - seven
  public func seven(array :[Nat]): async Text {
    // let array_1 : [Nat] = Array.mapResult<Nat, Nat, Text>(array, );
-   for(vals in array.vals()){
-     let text_render = Nat.toText(vals);
+   for(val in array.vals()){
+     let text_render = Nat.toText(val);
       if(Text.contains(text_render, #char '8')){
         return "seven!";
       };
       return "No seven! (or do I really mean 8 - who knows.";
    };
-
+ };
 
 //    Debug.print(array_1);
 //    return "Working";
